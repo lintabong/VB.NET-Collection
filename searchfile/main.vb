@@ -7,7 +7,6 @@ Module program
     Public Declare Function mciSendString Lib "winmm.dll" Alias "mciSendStringA" (ByVal lpstyCommand As String, ByVal lpstrReturnString As String, ByVal uReturnLenght As Integer, ByVal hwndCallback As Integer) As Integer
 
     Sub Main()
-
         Dim datename As String
         Dim name As String
         Dim se As String
@@ -81,8 +80,6 @@ Module program
                 Console.WriteLine(dia.ToString().Split("\")(rrs.Split("\").Length - 1))
 
             End If
-
-
             count += 1
         Next
 
