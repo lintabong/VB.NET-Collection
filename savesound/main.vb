@@ -84,6 +84,5 @@ Module program
 
             Sleep(1000)
         End While
-
     End Sub
 End Module
