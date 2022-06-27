@@ -1,11 +1,10 @@
-Public Class Form4
+Public Class formSaveAud
 
     Public Declare Sub Sleep Lib "Kernel32" (ByVal dwMilliseconds As Long)
     Public Declare Function mciSendString Lib "winmm.dll" Alias "mciSendStringA" (ByVal lpstyCommand As String, ByVal lpstrReturnString As String, ByVal uReturnLenght As Integer, ByVal hwndCallback As Integer) As Integer
 
     Public Sub New()
         InitializeComponent()
-
         Dim A As Threading.Thread = New Threading.Thread(AddressOf taskA)
         A.Start()
     End Sub
@@ -15,8 +14,6 @@ Public Class Form4
             Label2.Text = Format(Now, "yyyy-MM-dd hh:mm:ss")
         End While
     End Sub
-
-
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim port As String
