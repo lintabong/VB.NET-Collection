@@ -81,7 +81,6 @@ Module program
             Console.Write(startRecord)
             Console.Write("  ")
             Console.WriteLine(statusModule)
-
             Sleep(1000)
         End While
     End Sub
