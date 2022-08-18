@@ -1,3 +1,3 @@
 # VB.NET-Collection
 
-list date
+My simple VB code, free to use
